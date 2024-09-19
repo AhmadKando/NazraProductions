@@ -1,0 +1,435 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents horizontal scroll */
+  width: 100%;
+  height: 100vh;
+  font-family: sans-serif; /* Example: Set default font */
+}
+
+.container, .container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%; /* Ensures the container fits within the viewport */
+}
+
+i{
+  font-weight: bold;
+}
+
+.navbar-nav{
+  display: flex;
+  padding-left: 5%;
+}
+
+.navbar-brand{
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+.socials-nav{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding-right: 2%;
+}
+
+#video-background{
+  position: fixed;
+  z-index: -1;
+  top: 0; 
+}
+
+
+.adrish-div{
+  color: aliceblue;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+#title{
+  font-size: 5em;
+}
+
+.adrish-div a{
+  font-size: 1em;
+}
+
+
+#portrait-img {
+  width: 25em;
+  height: 30em;
+  object-fit: cover;
+  box-shadow: 2px 30px 25px rgba(6, 33, 43, 0.26);
+}
+.landing-img{
+  text-align: center;
+}
+
+.landing-name {
+  color: black;
+  text-align: center;
+}
+
+.landing-name div{
+  text-align: start;
+  padding-left: 20px;
+}
+
+.intro-div{
+  padding: 5% 0px 5% 0px;
+  background: rgb(255, 255, 255);
+  background-size: cover;
+  background-position: start;
+}
+
+.portfolio-banner{
+  height: 25%;
+  background-image: url("Assets/parking.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: aliceblue;
+}
+
+.fiverr{
+  display: flex;
+  height: 100px;
+}
+
+.fiverr h2 a{
+  font-weight: bold;
+  color: black;
+}
+
+.portfolio{
+  min-height: 100vh;
+  width: 100vw;
+  background: white;
+}
+
+.videos{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+  align-items: center;
+  color: white;
+}
+
+.video{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  background-size: cover;
+  background-position: center;
+  min-width: 450px;
+  min-height: 300px;
+  flex: auto;
+  box-shadow: 2px 20px 40px rgba(0, 0, 0, 0.267);
+  border-radius: .5em;
+}
+
+
+.video:hover{
+  opacity: .8;
+}
+
+.video i {
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.about-banner{
+  height: 25%;
+  background-image: url("Assets/camera.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(240, 248, 255);
+}
+
+.about-text{
+  display: flex;
+  flex-wrap: wrap;
+  justify-self: end;
+  max-width: 600px;
+  min-width: 300px;
+  width: 100%;
+}
+
+.portrait-img{
+  min-width: 300px;
+  max-height: 30em;
+  box-shadow: 2px 30px 25px rgba(6, 33, 43, 0.26)
+}
+
+.about{
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact-page{
+  color:black;
+  background-color: white;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-page h2{
+  font-weight: bold;
+}
+
+.contact-page a{
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  font-weight: lighter;
+}
+
+.contact-banner{
+  height: 25%;
+  background-image: url("Assets/wall1.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: aliceblue;
+}
+
+.business-card-container {
+  width: 400px;  /* Increased width for better visibility */
+  height: 250px; /* Increased height for better visuals */
+  position: relative;
+  perspective: 1000px; /* Needed for 3D effect */
+  margin-left: 50px; /* Shifts the card to the right */
+}
+
+.business-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.business-card-container:hover .business-card-inner {
+  transform: rotateY(180deg);
+}
+
+.business-card-front, .business-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.business-card-front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.business-card-back {
+  transform: rotateY(180deg);
+}
+
+
+footer i {
+  color: black; /* Change icons to black */
+}
+
+footer a.btn {
+  border-color: black; /* Ensure the border of the buttons is black */
+  color: black; /* Change the icon color inside the button */
+}
+
+footer a.btn:hover {
+  background-color: rgb(255, 255, 255); /* Add a hover effect if needed */
+  color: white; /* Change icon color on hover */
+}
+footer a {
+  color: black; /* Change link text color to black */
+}
+
+footer a:hover {
+  color: gray; /* Optional: Add hover effect for links */
+}
+
+.contact-page {
+  background-image: url('Assets/contact-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+}
+
+.contact-section {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 60px; /* Added to create space before footer */
+}
+
+.contact-section p a {
+  color: #777b80;
+  text-decoration: none;
+}
+
+.contact-section p a:hover {
+  color: #3e4143;
+}
+
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.form-control {
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  background-color: #777b80;
+  color: white;
+  padding: 10px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-block:hover {
+  background-color: #3e4143;
+}
+
+.contact-banner h1 {
+  font-size: 3rem;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .contact-section {
+      padding: 20px;
+  }
+
+  .contact-section h2 {
+      font-size: 2rem;
+  }
+
+  .contact-section p {
+      font-size: 1rem;
+  }
+
+  .contact-banner h1 {
+      font-size: 2rem;
+  }
+}
+
+
+@media (min-aspect-ratio: 16/9) {
+  #video-background {
+      width:100%;
+      height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  #video-background { 
+      width:auto;
+      height: 100%;
+  }
+}
+@media (max-width: 767px) {
+  #video-background {
+      display: none;
+  }
+
+  .adrish-div {
+      background: url('Assets/bg.jpg'); /****/
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+  }
+}
+
+@media all and (max-width: 800px) {
+
+  #title{
+    font-size: 2em;
+  }
+  .adrish-div a{
+    font-size: 1em;
+  }
+
+  .navbar-brand{
+    font-size: 1.5em;
+  }
+
+  #portrait-img{
+    width: 60vw;
+    height: auto;
+    margin: 40px 10px 60px 10px;
+  }
+
+  .video{
+    min-width: 75vw;
+    min-height: 200px;
+  }
+
+  .about-text{
+    padding: 50px 15px;
+
+  }
+
+  .about-text h2{
+    margin-bottom: 15px;
+    font-size: 2em;
+  }
+
+  #about{
+    padding-bottom: 60px;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .container-fluid {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 0;
+  }
+
+.adrish-div, .intro-div, .portfolio-banner, .about-banner, .contact-banner, .contact-page {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+}

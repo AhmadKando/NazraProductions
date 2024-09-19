@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Nazra Productions</title>
+    <!-- Use your new icon path here -->
+    <link rel="icon" type="image/png" href="Assets/favicon.ico"> 
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="stylesheet" href="venobox/venobox.css" type="text/css" media="screen">
+    <script src="https://kit.fontawesome.com/850067af47.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="venobox/venobox.css">
+    <script src="venobox/venobox.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+        <div class="container">
+            <!-- Logo with adjusted size and moved slightly to the left -->
+            <a class="navbar-brand" href="#" style="margin-right: 20px;">
+                <img src="Assets/logo.png" alt="Nazra Logo" style="height: 60px; width: 150px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse justify-content-start navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <!-- Menu items with same size as logo and icons -->
+                    <a class="nav-link active" aria-current="page" href="#portfolio" style="font-size: 1.5rem;">Work</a>
+                    <a class="nav-link active" href="#about" style="font-size: 1.5rem;">About</a>
+                    <a class="nav-link active" href="#contact" style="font-size: 1.5rem;">Contact</a>
+                </div>
+    
+                <div class="navbar-nav ml-auto socials-nav" style="margin-left: 20px;">
+                    <!-- Icons with same size as logo and text, moved slightly to the right -->
+                    <a class="nav-link active" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/nazraproductions/">
+                        <i class="fab fa-instagram" style="font-size: 1.7rem;"></i>
+                    </a>
+                    <a class="nav-link active" target="_blank" rel="noopener noreferrer" href="mailto:ahmadkindo0@gmail.com">
+                        <i class="far fa-envelope" style="font-size: 1.7rem;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Landing Page -->
+    <div data-aos="fade-up"
+    data-aos-offset="500"
+    data-aos-duration="1000"
+    class="adrish-div">
+        <h1 id="title"><b>NAZRA PRODUCTIONS</b></h1>
+        <a class="btn btn-outline-light btn-sm" href="#portfolio">VIEW PORTFOLIO</a>
+    </div>
+
+    <video autoplay loop muted poster="Assets/bg.jpg" playsinline id="video-background">
+        <source src="Assets/Render_trim.mp4">
+    </video>
+
+    <div class="intro-div d-flex container-fluid row  justify-content-center align-items-center">
+        <div data-aos="fade-down" data-aos-duration="500" class="col img-fluid landing-img">
+    
+        </div>
+
+        <div class="intro-section py-5">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-8">
+                        <h3 class="mb-3">Hi, I'm Ahmad.</h3>
+                        <h3 class="mb-3">Welcome to <strong>Nazra Productions!</strong></h3>
+                        <p class="lead mt-4" style="font-size: 1.25rem;">
+                            As a passionate car videographer and Software Engineer, my journey began in 2020 when I 
+                            started filming my own car, and that's where my love for capturing the beauty of vehicles 
+                            grew. What started as a personal hobby quickly became my creative obsession, leading me to 
+                            produce high-quality videos for car dealerships and enthusiasts alike. I founded <strong>Nazra Productions</strong> 
+                            with one goal in mind: to combine my passion for cars and videography, delivering engaging, dynamic, 
+                            and visually compelling content that tells a story.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!-- WORK SECTION -->
+    <div id="portfolio" class="container-fluid align-items-center row portfolio-banner">
+        <div data-aos="fade-up" data-aos-duration="250" class="w-100 text-center">
+            <h1><b>PORTFOLIO</b></h1>
+        </div>
+    </div>
+
+    <div class="portfolio container-fluid">
+        <div class="d-flex justify-content-center align-items-end freelance fiverr">
+            <h2>Some of Our Work</h2>
+        </div>
+
+        <div class="d-flex flex-row flex-wrap justify-content-center">
+            <div class="col-md-3 video-container">
+                <video autoplay loop muted playsinline class="embed-responsive-item w-100">
+                    <source src="Assets/vid2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="col-md-3 video-container">
+                <video autoplay loop muted playsinline class="embed-responsive-item w-100">
+                    <source src="Assets/vid1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="col-md-3 video-container">
+                <video autoplay loop muted playsinline class="embed-responsive-item w-100">
+                    <source src="Assets/vid4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="col-md-3 video-container">
+                <video autoplay loop muted playsinline class="embed-responsive-item w-100">
+                    <source src="Assets/vid3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .video-container {
+            padding: 10px;
+        }
+    </style>
+
+    <!-- ABOUT SECTION -->
+    <div class="container-fluid align-items-center row about-banner">
+        <div data-aos="fade-up" data-aos-duration="250" class="w-100 text-center">
+            <h1><b>ABOUT</b></h1>
+        </div>
+    </div>
+    
+    <div id="about" class="container-fluid justify-content-center about align-items-center portfolio row">
+        <div data-aos="fade-up" data-aos-duration="500" class="col about-text">
+            <h2><b>Nazra Productions</b></h2>
+            <br>
+            <p> We specialize in filming cars for dealerships and enthusiasts, capturing the essence 
+                of every vehicle. We offer a way to stand out in the market by showcasing your inventory through high-quality 
+                videos that engage potential buyers and bring your vehicles to life. Let Nazra Productions help elevate your 
+                brand with content that drives sales and leaves a lasting impression.
+            </p>
+        </div>
+            <div data-aos="fade-down" data-aos-duration="500" class="col-4 align-items-center d-flex justify-content-center business-card-container">
+
+            <div class="col-4 align-items-center d-flex justify-content-center business-card-container">
+                <div class="business-card-inner">
+                    <div class="business-card-front">
+                        <img class="img-fluid portrait-img" src="Assets/cardf.png" alt="Business Card Front">
+                    </div>
+                    <div class="business-card-back">
+                        <img class="img-fluid portrait-img" src="Assets/cardb.png" alt="Business Card Back">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- New Contact Section -->
+    <div id="contact" class="container-fluid align-items-center row contact-banner">
+        <div data-aos="fade-up" data-aos-duration="250" class="w-100 text-center">
+            <h1><b>CONTACT</b></h1>
+        </div>
+    </div>
+
+    <div class="container contact-section py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-duration="500">
+                <h2 class="text-center">Let's discuss your project!</h2>
+    
+                <!-- Contact Form using Formspree -->
+                <form id="contact-form" action="https://formspree.io/f/xgvwjedd" method="POST">
+                    <div class="form-group mb-3">
+                        <label for="name">Your Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="email">Your Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="message">Your Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                </form>
+    
+                <!-- Success message -->
+                <div id="success-message" class="alert alert-success mt-3" style="display: none;">
+                    Your message has been sent!
+                </div>
+    
+                <!-- Error message -->
+                <div id="error-message" class="alert alert-danger mt-3" style="display: none;">
+                    There was an error sending your message. Please try again later.
+                </div>
+    
+                <!-- Display Email -->
+                <p class="text-center mt-3" style="font-size: 1.2rem;">
+                    Or reach out directly at: <strong><a href="mailto:ahmadkindo0@gmail.com">ahmadkindo0@gmail.com</a></strong>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <script>
+        // Handle form submission using AJAX
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();  // Prevent form submission
+    
+            // Get form data
+            var formData = new FormData(this);
+    
+            // Send data to Google Apps Script
+            fetch(this.action, {
+                method: "POST",
+                body: formData,
+            })
+            .then(function(response) {
+                // Show success message
+                document.getElementById("success-message").style.display = "block";
+                document.getElementById("error-message").style.display = "none";
+                
+                // Reset form fields
+                document.getElementById("contact-form").reset();
+            })
+            .catch(function(error) {
+                // Show error message
+                document.getElementById("success-message").style.display = "none";
+                document.getElementById("error-message").style.display = "block";
+            });
+        });
+    </script> -->
+
+    <footer style="background-color: #C4BEBA;" class="text-center text-black">
+        <div class="container p-4 pb-0">
+            <section class="mb-4">
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/nazraproductions/" role="button">
+                    <i class="fab fa-instagram fa-lg"></i>
+                </a>
+            </section>
+            <p>Nazra Productions<br>Milton, Ontario</p>
+        </div>
+        <hr style="margin: 10px 20% 5px 20%;">
+        <div class="text-center p-3" style="background-color: #C4BEBA;">
+            © Copyright 2024 | All rights reserved by:
+            <a class="text-black" href="#">Ahmad Kando</a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();  // Prevent form submission and page reload
+    
+            // Get form data
+            var formData = new FormData(this);
+    
+            // Send form data to Formspree
+            fetch(this.action, {
+                method: "POST",
+                body: formData,
+                headers: { 'Accept': 'application/json' }
+            })
+            .then(function(response) {
+                if (response.ok) {
+                    // Show success message
+                    document.getElementById("success-message").style.display = "block";
+                    document.getElementById("error-message").style.display = "none";
+                    document.getElementById("contact-form").reset();
+    
+                    // Hide message after 5 seconds
+                    setTimeout(function() {
+                        document.getElementById("success-message").style.display = "none";
+                    }, 5000);
+                } else {
+                    throw new Error('Error submitting form');
+                }
+            })
+            .catch(function(error) {
+                // Show error message
+                document.getElementById("success-message").style.display = "none";
+                document.getElementById("error-message").style.display = "block";
+    
+                // Hide message after 5 seconds
+                setTimeout(function() {
+                    document.getElementById("error-message").style.display = "none";
+                }, 5000);
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.venobox').venobox({
+                closeColor: '#f4f4f4',
+                spinColor: '#f4f4f4',
+                arrowsColor: '#f4f4f4',
+                closeBackground: '#17191D',
+                overlayColor: 'rgba(23,25,29,0.8)'
+            });
+        });
+
+        AOS.init();
+
+        var nav = document.querySelector('nav');
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 100) {
+                nav.classList.add('bg-light', 'shadow', 'navbar-light');
+                nav.classList.remove('navbar-dark');
+            } else {
+                nav.classList.remove('bg-light', 'shadow', 'navbar-light');
+                nav.classList.add('navbar-dark');
+            }
+        });
+    </script>
+
+    <!-- 3D Model JS -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/loaders/OBJLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/loaders/MTLLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/controls/OrbitControls.js"></script>
+
+    <script>
+        // Scene, camera, renderer
+        var scene = new THREE.Scene();
+        var container = document.getElementById('3d-car-container');
+        var containerWidth = container.clientWidth;
+        var containerHeight = container.clientHeight;
+        var camera = new THREE.PerspectiveCamera(75, containerWidth / containerHeight, 0.1, 1000);
+        var renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(containerWidth, containerHeight);
+        container.appendChild(renderer.domElement);
+
+        scene.background = new THREE.Color(0xffffff);  // Set background to white
+
+        // OrbitControls for user interaction
+        var controls = new THREE.OrbitControls(camera, renderer.domElement);
+
+        // Load the MTL and OBJ model
+        var mtlLoader = new THREE.MTLLoader();
+        mtlLoader.load('Assets/gtr.mtl', function (materials) {
+            materials.preload();
+            var objLoader = new THREE.OBJLoader();
+            objLoader.setMaterials(materials);
+            objLoader.load('Assets/gtr.obj', function (object) {
+                object.scale.set(0.01, 0.01, 0.01); // Scale the model
+                scene.add(object);
+            });
+        });
+
+        // Lighting
+        var light = new THREE.DirectionalLight(0xffffff, 1);
+        light.position.set(5, 5, 5).normalize();
+        scene.add(light);
+
+        var ambientLight = new THREE.AmbientLight(0x404040); // Soft white light
+        scene.add(ambientLight);
+
+        camera.position.z = 2; // Set appropriate camera position
+
+        function animate() {
+            requestAnimationFrame(animate);
+            controls.update();  // Update OrbitControls for interaction
+            renderer.render(scene, camera);
+        }
+
+        animate();
+
+        // Handle window resize
+        window.addEventListener('resize', function () {
+            var width = container.clientWidth;
+            var height = container.clientHeight;
+            renderer.setSize(width, height);
+            camera.aspect = width / height;
+            camera.updateProjectionMatrix();
+        });
+    </script> -->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/loaders/OBJLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/loaders/MTLLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/controls/OrbitControls.js"></script>
+
+    <script>
+        // Scene, camera, renderer
+        var scene = new THREE.Scene();
+        var container = document.getElementById('3d-car-container');
+        var containerWidth = container.clientWidth;
+        var containerHeight = container.clientHeight;
+        var camera = new THREE.PerspectiveCamera(50, containerWidth / containerHeight, 0.1, 1000); // Changed field of view for zoom
+        var renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(containerWidth, containerHeight);
+        container.appendChild(renderer.domElement);
+
+        scene.background = new THREE.Color(0xffffff);  // Set background to white
+
+        // OrbitControls for user interaction
+        var controls = new THREE.OrbitControls(camera, renderer.domElement);
+        controls.enableZoom = false; // Disable zoom to prevent user zooming in/out
+        controls.enablePan = false; // Disable panning
+
+        // Load the MTL and OBJ model
+        var mtlLoader = new THREE.MTLLoader();
+        mtlLoader.load('Assets/gtr.mtl', function (materials) {
+            materials.preload();
+            var objLoader = new THREE.OBJLoader();
+            objLoader.setMaterials(materials);
+            objLoader.load('Assets/gtr.obj', function (object) {
+                object.scale.set(0.3, 0.3, 0.3); // Adjust the scale for zoom
+                object.position.set(0, -0.15, 0); // Position the car higher to center it vertically
+                scene.add(object);
+            });
+        });
+
+        // Lighting
+        var light = new THREE.DirectionalLight(0xffffff, 1);
+        light.position.set(5, 5, 5).normalize();
+        scene.add(light);
+
+        var ambientLight = new THREE.AmbientLight(0x404040); // Soft white light
+        scene.add(ambientLight);
+
+        camera.position.z = 1.5; // Bring the camera closer for zoom
+
+        function animate() {
+            requestAnimationFrame(animate);
+            controls.update();  // Update OrbitControls for interaction
+            renderer.render(scene, camera);
+        }
+
+        animate();
+
+        // Handle window resize
+        window.addEventListener('resize', function () {
+            var width = container.clientWidth;
+            var height = container.clientHeight;
+            renderer.setSize(width, height);
+            camera.aspect = width / height;
+            camera.updateProjectionMatrix();
+        });
+    </script> -->
+
+</body>
+
+</html>
